@@ -1,47 +1,52 @@
-<div class="w-full flex flex-row items-center mb-10 md:mb-0 justify-center md:justify-normal bounce-in-right">
-  <img src="logo.png" class="h-[75px] w-[75px] md:h-[100px] md:w-[100px]" />
-		<span class="md:pl-4 text-slate-50 font-bebas text-3xl md:text-4xl pt-[2px] px-1">Night of the Living Dev</span>
+<div
+  class="w-full flex flex-row items-center mb-10 md:mb-0 justify-center md:justify-normal bounce-in-right"
+>
+  <img src="logo.png" class="h-[100px] w-[100px]" />
+  <span
+    class="md:pl-4 text-slate-50 font-bebas text-3xl md:text-4xl pt-[2px] px-1"
+    >Night of the Living Dev</span
+  >
 </div>
 
 <style>
   @keyframes bounceInRight {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    from {
+      opacity: 0;
+      transform: translate3d(3000px, 0, 0) scaleX(3);
+    }
+
+    60% {
+      opacity: 1;
+      transform: translate3d(-25px, 0, 0) scaleX(1);
+    }
+
+    75% {
+      transform: translate3d(10px, 0, 0) scaleX(0.98);
+    }
+
+    90% {
+      transform: translate3d(-5px, 0, 0) scaleX(0.995);
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+    }
   }
 
-  from {
-    opacity: 0;
-    transform: translate3d(3000px, 0, 0) scaleX(3);
+  .bounce-in-right {
+    animation: bounceInRight 1.5s ease-out;
   }
 
-  60% {
-    opacity: 1;
-    transform: translate3d(-25px, 0, 0) scaleX(1);
+  .bounce-in-right-second {
+    animation: bounceInRight 1.5s ease-out;
+    animation-delay: 1s;
   }
-
-  75% {
-    transform: translate3d(10px, 0, 0) scaleX(0.98);
-  }
-
-  90% {
-    transform: translate3d(-5px, 0, 0) scaleX(0.995);
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.bounce-in-right {
-  animation: bounceInRight 1.5s ease-out;
-}
-
-.bounce-in-right-second {
-  animation: bounceInRight 1.5s ease-out;
-  animation-delay: 1s;
-}
 </style>
