@@ -26,9 +26,9 @@ import Nav from "../components/Nav.astro"
     <div
       class="flex flex-col justify-center items-center text-slate-50 font-bebas my-11 text-5xl opacity-0 fromleft ml-[-200vw] md:my-20 md:flex-row md:text-5xl md:gap-16"
     >
-      <a href="" class="hover:underline">Our Work</a>
-      <a href="" class="hover:underline">Pricing</a>
-      <a href="" class="hover:underline">Contact</a>
+      <a href="">Our Work</a>
+      <a href="">Pricing</a>
+      <a href="">Contact</a>
     </div>
     <h3
       class="font-poppins text-slate-400 text-center text-lg mb-6 logos-fade md:mt-24"
@@ -99,6 +99,28 @@ import Nav from "../components/Nav.astro"
   a {
     margin: 16px 0px;
     text-decoration: none;
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: rgb(142, 132, 249);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+
+  a:hover::after {
+    transform: scale(1);
   }
 
   .fromleft {
