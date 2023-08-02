@@ -19,11 +19,13 @@ import Nav from "../components/Nav.astro"
       <a href="">Pricing</a>
       <a href="">Contact</a>
     </div>
-    <h3 class="font-poppins text-slate-400 text-center text-lg mb-4 logos-fade">
+    <h3
+      class="font-poppins text-slate-400 text-center text-lg mb-4 fromleft ml-[-400vw]"
+    >
       Trusted by
     </h3>
     <div
-      class="grid grid-cols-2 logos-fade px-4 justify-items-center items-center"
+      class="grid grid-cols-2 px-4 justify-items-center items-center fromleft ml-[-400vw]"
     >
       <img src="/logos/koch-white.png" class="h-auto w-[90px]" />
       <img src="/logos/dac-white.png" class="h-[45px] w-auto" />
@@ -48,6 +50,10 @@ import Nav from "../components/Nav.astro"
     margin: 16px 0px;
   }
 
+  .fromleft {
+    animation: from-left 2.25s ease-in-out forwards;
+    animation-delay: 2s;
+  }
   .links-fade {
     opacity: 0;
     animation: fade-in 3s forwards;
@@ -97,6 +103,20 @@ import Nav from "../components/Nav.astro"
       opacity: 0;
     }
     100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes from-left {
+    0% {
+      margin-left: -400vw;
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      margin-left: 0px;
       opacity: 1;
     }
   }
