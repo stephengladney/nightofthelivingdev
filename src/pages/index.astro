@@ -26,9 +26,9 @@ import Nav from "../components/Nav.astro"
     <div
       class="flex flex-col justify-center items-center text-slate-50 font-bebas my-11 text-5xl opacity-0 fromleft ml-[-200vw] md:my-20 md:flex-row md:text-5xl md:gap-16"
     >
-      <a href="" class="link">Our Work</a>
-      <a href="" class="link">Pricing</a>
-      <a href="" class="link">Contact</a>
+      <a href="" class="link text-slate-300">Our Work</a>
+      <a href="" class="link text-slate-300">Pricing</a>
+      <a href="" class="link text-slate-300">Contact</a>
     </div>
     <h3
       class="font-poppins text-slate-400 text-center text-lg mb-6 logos-fade md:mt-24"
@@ -96,12 +96,18 @@ import Nav from "../components/Nav.astro"
     animation-delay: 1.5s;
   }
 
+  @media screen and (min-width: 1024px) {
+    a {
+      margin: 16px 0px;
+      padding: 0.2em 0;
+    }
+  }
   a {
-    margin: 16px 0px;
+    /* margin: 16px 0px; */
     text-decoration: none;
     display: block;
     position: relative;
-    padding: 0.2em 0;
+    padding: 0.35em 0;
   }
 
   a.link::after {
