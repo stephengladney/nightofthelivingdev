@@ -1,0 +1,203 @@
+---
+import Layout from "../layouts/Layout.astro"
+import NavStill from "../components/Nav-still.astro"
+---
+
+<Layout
+  title="Sales consulting. Customer outreach. App development - Night of the Living Dev"
+>
+  <NavStill />
+  <main>
+    <h1
+      class="font-poppins font-bold text-violet-100 text-4xl md:text-7xl px-2 text-center my-12 !leading-tight"
+    >
+      Pricing
+    </h1>
+    <div
+      class="grid grid-rows-3 md:grid-rows-none md:grid-cols-3 px-2 max-w-7xl m-auto gap-10"
+    >
+      <div class="border-2 gradient-border border-solid p-8">
+        <h3 class="text-slate-200 font-poppins text-3xl text-center">
+          Sales<br />consulting
+        </h3>
+        <h4
+          class="text-violet-400 text-3xl font-bold font-poppins text-center my-4"
+        >
+          $125/hour
+        </h4>
+        <p class="text-slate-300 mt-4 text-center">
+          With over 12 years of experience in inside and outside sales, I've
+          learned and perfected the optimal techniques and strategies to
+          maximize conversion at each stage of the sales funnel. I will coach
+          you and your team on how to optimize your sales process, including
+          lead generation, cold calling, cold emailing, messaging, demoing,
+          managing pipeline and closing techniques.
+        </p>
+      </div>
+      <div class="border-2 gradient-border border-solid p-8">
+        <h3 class="text-slate-200 font-poppins text-3xl text-center">
+          Prospect<br />outreach
+        </h3>
+        <h4
+          class="text-violet-400 text-3xl font-bold font-poppins text-center my-4"
+        >
+          $49/hour
+        </h4>
+        <p class="text-slate-300 mt-4 text-center">
+          If you need to contact potential clients, customers or users for
+          customer discovery or product demonstrations, we have a team of
+          trained business development reps available 9am-5pm EST. We can
+          perform outreach via cold calling, cold emailing and social media
+          outreach. We can also consult with you about which channels are best
+          for your business.
+        </p>
+      </div>
+      <div class="border-2 gradient-border border-solid p-8">
+        <h3 class="text-slate-200 font-poppins text-3xl text-center">
+          Software<br />development
+        </h3>
+        <h4
+          class="text-violet-400 text-3xl font-bold font-poppins text-center my-4"
+        >
+          $65/hour
+        </h4>
+        <p class="text-slate-300 mt-4 text-center">
+          I have 5+ years of experience developing software including web,
+          mobile and blockchain applications. I've developed for solutions for
+          everything from small startups to billion dollar enterprises. This
+          service includes product roadmapping, testing and deployment of the
+          application. It does not include any external fees such as web
+          hosting.
+        </p>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    opacity: 0;
+    animation: fadein 2s ease-in forwards;
+  }
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .gradient-border {
+    background: linear-gradient(#181827 25%, #181827) padding-box,
+      linear-gradient(to right, rgb(139, 92, 246), rgb(196, 181, 253))
+        border-box;
+    border-radius: 40px;
+    border: 4px solid transparent;
+  }
+
+  @media screen and (min-width: 1024px) {
+    a {
+      margin: 16px 0px;
+      padding: 0.2em 0;
+    }
+  }
+  a {
+    /* margin: 16px 0px; */
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding: 0.35em 0;
+  }
+
+  a.link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: rgb(142, 132, 249);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+
+  a.link:hover::after {
+    transform: scale(1);
+  }
+
+  .fromleft {
+    animation: from-left 3s ease-in-out forwards;
+    animation-delay: 1.25s;
+  }
+  .links-fade {
+    opacity: 0;
+    animation: fade-in 3s forwards;
+    animation-delay: 2.5s;
+  }
+
+  .logos-fade {
+    opacity: 0;
+    animation: fade-in 3s forwards;
+    animation-delay: 3.75s;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 12%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes from-left {
+    0% {
+      margin-left: -100vw;
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      margin-left: 0px;
+      opacity: 1;
+    }
+  }
+</style>
