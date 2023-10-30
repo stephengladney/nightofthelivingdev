@@ -7,18 +7,29 @@ import Nav from "../components/Nav.astro"
   <main>
     <Nav />
     <h1
-      class="font-poppins font-bold bg-gradient-to-b from-violet-300 to-violet-600 bg-clip-text text-transparent text-4xl md:text-7xl px-2 text-center !leading-tight md:mt-20"
+      class="font-poppins font-bold bg-gradient-to-b from-violet-300 to-violet-600 bg-clip-text text-transparent text-4xl md:text-7xl px-2 text-center !leading-tight md:mt-20 fadein"
     >
-      Customer outreach and<br />discovery for startups
+      Customer outreach and <br class="hidden lg:inline" />discovery <br
+        class="lg:hidden"
+      />for startups
     </h1>
-    <div
-      class="flex flex-col justify-center items-center text-slate-50 font-bebas my-11 text-5xl opacity-0 fromleft ml-[-200vw] md:my-20 md:flex-row md:text-5xl md:gap-16"
-    >
-      <a href="about" class="link text-slate-300">About</a>
-      <a href="pricing" class="link text-slate-300">Pricing</a>
-      <a href="" class="link text-slate-300">Contact</a>
+    <div class="text-center flex justify-center">
+      <p
+        class="text-slate-300 font-poppins mt-8 p-6 fadein2 text-lg lg:text-2xl lg:max-w-5xl"
+      >
+        Get meetings, interviews and demos <br class="md:hidden" />with your
+        target customers.
+      </p>
     </div>
-    <h3
+  </main>
+  <div
+    class="flex flex-col justify-center items-center text-slate-50 font-bebas my-4 text-5xl opacity-0 fromleft ml-[-200vw] md:my-20 md:flex-row md:text-5xl md:gap-16"
+  >
+    <a href="about" class="link text-slate-300">About</a>
+    <a href="pricing" class="link text-slate-300">Pricing</a>
+    <a href="" class="link text-slate-300">Contact</a>
+  </div>
+  <!-- <h3
       class="font-poppins text-slate-400 text-center text-lg mb-6 logos-fade md:mt-24"
     >
       Trusted by
@@ -26,49 +37,47 @@ import Nav from "../components/Nav.astro"
     <div
       class="grid grid-cols-[1fr,1fr,1fr] px-1 justify-items-center items-center logos-fade max-w-4xl mx-auto"
     >
-      <!-- <a href="https://kochind.com" target="_blank"
+      <a href="https://kochind.com" target="_blank"
         ><img src="/logos/koch-white.png" class="h-auto w-[72px]" /></a
-      > -->
-      <a href="https://www.dopeapedao.com/" target="_blank"
-        ><img src="/logos/dac-white.png" class="h-[36px] w-auto" /></a
       >
-      <a href="https://neighborhoodstudios.com" target="_blank"
-        ><img src="/logos/nstudios.png" class="h-[36px] w-auto" /></a
-      >
-      <a href="https://mightymeld.com" target="_blank">
-        <div class="flex flex-row">
-          <svg
-            width="23"
-            height="25"
-            viewBox="0 0 23 25"
+    <a href="https://www.dopeapedao.com/" target="_blank"
+      ><img src="/logos/dac-white.png" class="h-[36px] w-auto" /></a
+    >
+    <a href="https://neighborhoodstudios.com" target="_blank"
+      ><img src="/logos/nstudios.png" class="h-[36px] w-auto" /></a
+    >
+    <a href="https://mightymeld.com" target="_blank">
+      <div class="flex flex-row">
+        <svg
+          width="23"
+          height="25"
+          viewBox="0 0 23 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M21.5549 11.2871C22.0098 6.96589 22.4629 1.43277 20.103 1.0697C17.743 0.706621 16.3514 1.79585 15.2621 3.55071C14.8386 2.34046 14.5722 1.0697 11.813 1.0697C8.36387 1.0697 5.15614 8.65039 3.82513 11.6668C0.183071 19.9207 0.194928 23.2686 3.09938 23.2686C4.62699 23.2686 5.57989 22.6196 7.87932 20.1917C7.87932 21.644 8.30326 22.3701 9.42964 22.6801C10.2183 22.8972 11.812 22.8542 12.6973 21.8329C13.3759 21.0501 13.8088 20.6152 13.9904 20.3127C14.2929 20.9783 14.9565 23.2122 16.8956 23.1476C20.5262 23.0266 21.1919 14.7363 21.5549 11.2871Z"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M21.5549 11.2871C22.0098 6.96589 22.4629 1.43277 20.103 1.0697C17.743 0.706621 16.3514 1.79585 15.2621 3.55071C14.8386 2.34046 14.5722 1.0697 11.813 1.0697C8.36387 1.0697 5.15614 8.65039 3.82513 11.6668C0.183071 19.9207 0.194928 23.2686 3.09938 23.2686C4.62699 23.2686 5.57989 22.6196 7.87932 20.1917C7.87932 21.644 8.30326 22.3701 9.42964 22.6801C10.2183 22.8972 11.812 22.8542 12.6973 21.8329C13.3759 21.0501 13.8088 20.6152 13.9904 20.3127C14.2929 20.9783 14.9565 23.2122 16.8956 23.1476C20.5262 23.0266 21.1919 14.7363 21.5549 11.2871Z"
-              fill="none"
-              stroke="#fff"
-              stroke-width="1.5"></path>
-            <line
-              y1="-0.75"
-              x2="7.04235"
-              y2="-0.75"
-              transform="matrix(-0.326514 0.945192 -0.945188 -0.326526 11.7734 8.14062)"
-              stroke="#fff"
-              stroke-width="1.5"></line>
-            <line
-              y1="-0.75"
-              x2="7.04235"
-              y2="-0.75"
-              transform="matrix(-0.326514 0.945192 -0.945188 -0.326526 16.0078 8.14062)"
-              stroke="#fff"
-              stroke-width="1.5"></line>
-          </svg>
-          <span class="text-slate-50 pl-2 font-bold">MightyMeld</span>
-        </div></a
-      >
-    </div>
-  </main>
+            stroke="#fff"
+            stroke-width="1.5"></path>
+          <line
+            y1="-0.75"
+            x2="7.04235"
+            y2="-0.75"
+            transform="matrix(-0.326514 0.945192 -0.945188 -0.326526 11.7734 8.14062)"
+            stroke="#fff"
+            stroke-width="1.5"></line>
+          <line
+            y1="-0.75"
+            x2="7.04235"
+            y2="-0.75"
+            transform="matrix(-0.326514 0.945192 -0.945188 -0.326526 16.0078 8.14062)"
+            stroke="#fff"
+            stroke-width="1.5"></line>
+        </svg>
+        <span class="text-slate-50 pl-2 font-bold">MightyMeld</span>
+      </div></a
+    > -->
 </Layout>
 
 <style>
@@ -78,10 +87,16 @@ import Nav from "../components/Nav.astro"
     /* max-width: 60ch; */
   }
 
-  h1 {
+  .fadein {
     opacity: 0;
     animation: fade-in 2s ease-in forwards;
     animation-delay: 1.5s;
+  }
+
+  .fadein2 {
+    opacity: 0;
+    animation: fade-in 2s ease-in forwards;
+    animation-delay: 2s;
   }
 
   @media screen and (min-width: 1024px) {
