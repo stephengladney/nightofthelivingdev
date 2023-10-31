@@ -3,31 +3,36 @@ import Layout from "../layouts/Layout.astro"
 import NavStill from "../components/Nav-still.astro"
 ---
 
-<Layout
-  title="Sales consulting. Customer outreach. Software development - Night of the Living Dev"
->
+<Layout title="Customer outreach and discovery for startups">
   <NavStill />
-  <main>
+  <main class="pb-24">
     <h1
-      class="font-poppins font-bold text-violet-100 text-4xl md:text-7xl px-2 text-center my-12 !leading-tight"
+      class="font-poppins font-bold text-violet-100 text-4xl md:text-6xl px-2 text-center my-12 !leading-tight"
     >
       About
     </h1>
-    <div
-      class="grid grid-rows-[auto,auto] lg:grid-cols-[auto,auto] m-auto w-full lg:w-1/2"
-    >
+
+    <div class="flex flex-col">
       <div class="mb-8 lg:mb-0">
-        <img src="../headshot.jpeg" class="w-3/4 lg:w-auto m-auto" />
+        <img
+          src="../headshot.jpeg"
+          class="m-auto rounded-full w-72 mb-2 lg:mb-12"
+        />
       </div>
-      <div class="px-8 text-white text-lg font-poppins">
-        <p class="mb-4">
+      <div class="text-white text-lg font-poppins w-full lg:w-1/3 m-auto">
+        <p class="text-center mb-8">
           My name is Stephen Gladney. I've worked in tech for 13 years across a
-          variety of areas incuding sales, product management, competitive
-          intelligence and software engineering. I'm also an entrepreneur with
-          one successful exit.
+          variety of areas including sales, product management, competitive
+          intelligence and software engineering. I'm also a former founder with
+          a successful exit.
         </p>
-        <p class="mb-16">If you're looking for help in any of these areas.</p>
-        <p class="text-right mr-24">-Stephen</p>
+        <p class="text-center">
+          After 10+ years of experience in sales, I've learned how to optimize
+          customer outreach in both volume and conversion rate. As a product
+          manager and founder, I've learned how to get the most out of
+          conversations with customers to answer key questions and uncover
+          useful insights.
+        </p>
       </div>
     </div>
   </main>
