@@ -1,0 +1,227 @@
+---
+import Layout from "../layouts/Layout.astro"
+import NavStill from "../components/Nav-still.astro"
+---
+
+<Layout title="Customer outreach and discovery for startups">
+  <NavStill />
+  <main class="pb-24">
+    <h1
+      class="font-poppins font-bold text-violet-100 text-4xl md:text-6xl px-2 text-center my-12 !leading-tight lg:my-20"
+    >
+      My Work
+    </h1>
+    <div class="px-4 text-white font-poppins flex flex-col items-center">
+      <img src="/logos/nstudios.png" class="h-[50px] w-auto" />
+      <h3 class="font-poppins font-bold my-8 text-xl lg:text-2xl">
+        Neighborhood Studios
+      </h3>
+      <p class="text-center text-base max-w-4xl mb-10">
+        Neighborhood Studios is a venture-funded startup studio based out of
+        Atlanta, GA. As part of exploring one of their startup ideas, they
+        needed to contact owners of local used furniture stores and conduct
+        interviews in order to better understand store operations, merchandise
+        acquisition and consignment sales. Within 30 days, I was able to contact
+        and conduct conversations with 17 furniture store owners. The studio
+        leadership was then able to utilize the knowledge and insights from
+        these conversations to make a determination on the viability this
+        startup opportunity.
+      </p>
+      <p class="text-center text-base max-w-4xl">
+        <span class="text-3xl">17 customer interviews</span><div
+          class="text-base text-purple-300 mt-1"
+        >
+          conducted in 30 days
+        </div>
+      </p>
+    </div>
+    <div class="flex flex-row justify-center">
+      <hr class="my-12 w-2/3" />
+    </div>
+    <div
+      class="px-4 text-white text-lg font-poppins flex flex-col items-center mb-4"
+    >
+      <svg
+        width="46"
+        height="50"
+        viewBox="0 0 23 25"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M21.5549 11.2871C22.0098 6.96589 22.4629 1.43277 20.103 1.0697C17.743 0.706621 16.3514 1.79585 15.2621 3.55071C14.8386 2.34046 14.5722 1.0697 11.813 1.0697C8.36387 1.0697 5.15614 8.65039 3.82513 11.6668C0.183071 19.9207 0.194928 23.2686 3.09938 23.2686C4.62699 23.2686 5.57989 22.6196 7.87932 20.1917C7.87932 21.644 8.30326 22.3701 9.42964 22.6801C10.2183 22.8972 11.812 22.8542 12.6973 21.8329C13.3759 21.0501 13.8088 20.6152 13.9904 20.3127C14.2929 20.9783 14.9565 23.2122 16.8956 23.1476C20.5262 23.0266 21.1919 14.7363 21.5549 11.2871Z"
+          fill="none"
+          stroke="#fff"
+          stroke-width="1.5"></path>
+        <line
+          y1="-0.75"
+          x2="7.04235"
+          y2="-0.75"
+          transform="matrix(-0.326514 0.945192 -0.945188 -0.326526 11.7734 8.14062)"
+          stroke="#fff"
+          stroke-width="1.5"></line>
+        <line
+          y1="-0.75"
+          x2="7.04235"
+          y2="-0.75"
+          transform="matrix(-0.326514 0.945192 -0.945188 -0.326526 16.0078 8.14062)"
+          stroke="#fff"
+          stroke-width="1.5"></line>
+      </svg>
+      <h3 class="font-poppins font-bold my-8 text-xl lg:text-2xl">
+        MightyMeld
+      </h3>
+      <p class="text-center text-base max-w-4xl mb-10">
+        MightyMeld is a venture-funded startup out of Los Angeles, CA that
+        provides software to frontend software developers. Prior to their
+        official launch, the company needed to present product demonstrations to
+        developers, initiate free trials and contract YouTube influencers to
+        promote their app. The knowledge and insights gained from over 100
+        product demos allowed the company to re-write its messaging and double
+        its demo to trial conversion rate.
+      </p>
+      <p class="text-center text-base max-w-4xl">
+        <span class="text-3xl">103 product demos</span><div
+          class="text-base text-purple-300 mt-1"
+        >
+          scheduled in 120 days
+        </div>
+      </p>
+      <p class="text-center text-base max-w-4xl mt-10">
+        <span class="text-3xl">6 influencers</span><div
+          class="text-base text-purple-300 mt-1"
+        >
+          hired in 30 days
+        </div>
+      </p>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    opacity: 0;
+    animation: fadein 2s ease-in forwards;
+  }
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .gradient-border {
+    background: linear-gradient(#181827 25%, #181827) padding-box,
+      linear-gradient(to right, rgb(139, 92, 246), rgb(196, 181, 253))
+        border-box;
+    border-radius: 40px;
+    border: 4px solid transparent;
+  }
+
+  @media screen and (min-width: 1024px) {
+    a {
+      margin: 16px 0px;
+      padding: 0.2em 0;
+    }
+  }
+  a {
+    /* margin: 16px 0px; */
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding: 0.35em 0;
+  }
+
+  a.link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: rgb(142, 132, 249);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+
+  a.link:hover::after {
+    transform: scale(1);
+  }
+
+  .fromleft {
+    animation: from-left 3s ease-in-out forwards;
+    animation-delay: 1.25s;
+  }
+  .links-fade {
+    opacity: 0;
+    animation: fade-in 3s forwards;
+    animation-delay: 2.5s;
+  }
+
+  .logos-fade {
+    opacity: 0;
+    animation: fade-in 3s forwards;
+    animation-delay: 3.75s;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 12%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes from-left {
+    0% {
+      margin-left: -100vw;
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      margin-left: 0px;
+      opacity: 1;
+    }
+  }
+</style>
