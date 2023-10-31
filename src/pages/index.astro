@@ -28,6 +28,7 @@ import Nav from "../components/Nav.astro"
     <a href="about" class="link text-slate-300">About me</a>
     <a href="work" class="link text-slate-300">My Work</a>
     <a href="" class="link text-slate-300">Contact</a>
+    <button id="testbutton">hello</button>
   </div>
   <!-- <h3
       class="font-poppins text-slate-400 text-center text-lg mb-6 logos-fade md:mt-24"
@@ -79,7 +80,20 @@ import Nav from "../components/Nav.astro"
       </div></a
     > -->
 </Layout>
+<script>
+  function testPost() {
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ title: "Fetch POST Request Example" }),
+    }
+    fetch("/api/contact", requestOptions)
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+  }
 
+  document.querySelector("#testbutton")?.addEventListener("click", testPost)
+</script>
 <style>
   main {
     /* margin: auto; */
